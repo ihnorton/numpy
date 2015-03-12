@@ -175,7 +175,7 @@ def pyod(filename):
     """
     out = []
 
-    fid = open(filename, 'r')
+    fid = open(filename, 'rb')
     try:
         yo = [int(oct(int(binascii.b2a_hex(o), 16))) for o in fid.read()]
         for i in range(0, len(yo), 16):
